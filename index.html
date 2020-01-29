@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+  <link href="/normalize.css" rel="stylesheet">
   <title>Jonathan Gilmour</title>
   <style>
     body {
@@ -10,26 +11,35 @@
       color: white;
       font-family: helvetica;
     }
+    img {
+      max-width: 250;
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
     p {
       font-size: 22px;
     }
-    input {
-      border: 0;
-      padding: 10px;
-      font-size: 18px;
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
     }
-    input[type="submit"] {
-      background: red;
-      color: white;
+    @media (max-width: 500px) {
+      img {
+        max-width: 100; 
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
     }
   </style>
 </head>
 <body>
   <img src="/images/me_with_dog.jpg">
-  <p>Hi! I'm Jonathan, a computer scientist and recent Grinnell grad.</p>
+  <p>Hi! I'm Jonathan, a computer scientist and '19 Grinnell grad.</p>
   <ul>
-      <li><a href="#">About Me</a></li>
-      <li><a href="#">Linkedin</a></li>
-      <li><a href="#">GitHub</a></li>
-    </ul>
+      <li><a href="https://www.linkedin.com/in/jonathangilmour/">LinkedIn</a></li>
+      <li><a href="https://github.com/gilmourj">GitHub</a></li>
+  </ul>
 </body>
